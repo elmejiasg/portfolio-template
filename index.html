@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <meta name="description" content="Responsive portfolio template with project showcase and GitHub integration.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Sidebar (profile info + links) -->
+  <aside class="sidebar d-flex flex-column align-items-center justify-content-center">
+    <img src="assets/img/profile.png" alt="Foto de perfil" class="profile-img" data-i18n-alt="profilePicAlt"/>
+    <h2 class="fs-4" data-i18n="name">Tu nombre</h2>
+
+    <div class="mb-3">
+      <p class="mb-1"><i class="fa-solid fa-envelope"></i> <span data-i18n="mail">usuario@example.com</span></p>
+    </div>
+
+    <div class="mt-auto flex-btn">
+      <a href="https://github.com/YOUR_GITHUB_USERNAME" class="btn btn-outline-light btn-md mb-2 w-100" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN_ID" class="btn btn-outline-light btn-md w-100" target="_blank">LinkedIn</a>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <div class="d-flex justify-content-end align-items-center">
+      <!-- Language selector -->
+      <div class="language-select dropdown text-end me-3">
+        <button class="btn dropdown-toggle icon-color" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-globe"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item lang-option" href="#" data-lang="es">ES</a></li>
+          <li><a class="dropdown-item lang-option" href="#" data-lang="en">EN</a></li>
+        </ul>
+      </div>
+
+      <!-- Theme toggle -->
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="themeSwitch" title="Toggle light/dark theme">
+      </div>
+    </div>
+
+    <h1 class="mb-5 t1" data-i18n="projects">Proyectos</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-5 projects-container">
+      <!-- Project cards will be injected here -->
+    </div>
+  </main>
+
+  <script type="module" src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
