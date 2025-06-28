@@ -1,11 +1,11 @@
 {
   "title": {
-    "es": "Plantilla de portfolio",
+    "es": "Plantilla para Portfolio",
     "en": "Portfolio Template"
   },
   "description": {
     "es": "Plantilla responsiva para portfolio personal creada con HTML, CSS y JavaScript. Incluye selector de idioma, integración con la API de GitHub y modo claro/oscuro.",
     "en": "A responsive personal portfolio template built with HTML, CSS, and JavaScript. Includes language switcher, GitHub API integration, and dark/light mode."
   },
-  "tags": ["HTML", "CSS", "JavaScript"]
+  "tags": ["HTML", "CSS", "JavaScript", "API"]
 }
